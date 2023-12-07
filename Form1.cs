@@ -52,7 +52,9 @@ namespace HELADITO
         private void BtnVer_Click(object sender, EventArgs e)
         {
             int gustoId = Convert.ToInt32(CbTipo.SelectedValue);
+
             DataTable tabla = oHeladito.GetVentasPorGusto(gustoId);
+
             Grilla.DataSource = tabla;
         }
     }

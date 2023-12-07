@@ -55,7 +55,6 @@ namespace HELADITO
                 FROM (Ventas
                 INNER JOIN Gustos ON Ventas.gusto_id = Gustos.gusto_id)
                 INNER JOIN Sucursales ON Sucursales.sucursal_id = Ventas.sucursal_id
-                WHERE Gustos.gusto_id = ?
             ";
 
                 using (comando = new OleDbCommand(query, conector))
